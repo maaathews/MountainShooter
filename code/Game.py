@@ -28,7 +28,6 @@ class Game:
                     if level_return:
                         score.save(menu_return, player_score)
 
-
             elif menu_return == MENU_OPTION[3]:
                 score.show()
 
@@ -36,4 +35,5 @@ class Game:
                 pygame.quit()  # Close Window
                 quit()  # end pygame
             else:
-                pass
+                pygame.quit()
+                quit()
